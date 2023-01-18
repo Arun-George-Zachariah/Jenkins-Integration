@@ -6,7 +6,7 @@ jobs:
           
   Job-trigger:
     name: Start ci job
-    runs-on: blossom
+    runs-on: self-hosted
     steps:
       - name: Start ci job
         run: blossom-ci
