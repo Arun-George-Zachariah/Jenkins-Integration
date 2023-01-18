@@ -1,0 +1,9 @@
+name: Blossom-CI
+on: [push, workflow_dispatch]
+jobs:        
+  Job-trigger:
+    name: Start ci job
+    runs-on: self-hosted
+    steps:
+      - name: Start ci job
+        run: curl http://10.137.149.25:8080/generic-webhook-trigger/invoke
