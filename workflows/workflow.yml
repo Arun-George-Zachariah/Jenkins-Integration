@@ -1,4 +1,4 @@
-name: Hello-World
+name: Jenkins-Integration
 on: [push, workflow_dispatch]
 jobs:
   build:
