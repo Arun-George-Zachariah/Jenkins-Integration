@@ -9,8 +9,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Start ci job
-        run: blossom-ci
-        env:
-          OPERATION: 'START-CI-JOB'
-          CI_SERVER: ${{ secrets.CI_SERVER }}
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: mickeygoussetorg/trigger-jenkins-job@v1
+      with:
+        jenkins-server: "http://10.137.149.25:8080/"
+        jenkins-job: "My-Pipeline"
